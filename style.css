@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.h1 {
+  display: flex;
+  justify-content: center;
+  color: #9d4edd;
+  font-size: 40px;
+  margin-top: 0.5em;
+}
+
+#live-clock {
+  display: flex;
+  justify-content: center;
+  color: #9d4edd;
+  font-size: 40px;
+  margin-top: 0.5em;
+}
+
+.container .button-container {
+  display: flex;
+  text-align: centers;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .button-container button {
+  margin-left: 2em;
+  padding: 0.3em 1em;
+  margin-bottom: 0.2em;
+  background-color: #9d4edd transparent;
+  color: #9d4edd;
+  cursor: pointer;
+  border: 1px solid #9d4edd;
+}
+
+.buttons-containers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.buttons-containers button {
+  margin-left: 1em;
+  padding: 0.3em 2em;
+  background-color: #9d4edd transparent;
+  color: #9d4edd;
+  cursor: pointer;
+  border: 1px solid #9d4edd;
+}
+
+.chart-frame {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+header,
+.container {
+  container-type: inline-size;
+}
+
+@container (max-width: 500px) {
+  .buttons-containers,
+  .button-container {
+    flex-direction: column;
+  }
+  #myChart {
+    width: 100%;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/icon2.png" />
+    <title>World Population</title>
+  </head>
+  <body>
+    <header>
+      <div class="h1">World Population</div>
+      <div id="live-clock">
+        <iframe
+          id="live"
+          title="World population"
+          src="https://www.theworldcounts.com/embeds/counters/8?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14"
+          style="border: none"
+          height="100"
+          width="300"
+        ></iframe>
+      </div>
+      <div class="buttons-containers">
+        <button id="world">Live</button>
+        <button id="africa">Africa</button>
+        <button id="americas">Americas</button>
+        <button id="asia">Asia</button>
+        <button id="europe">Europe</button>
+        <button id="oceania">Oceania</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <canvas id="myChart" width="200" height="80"></canvas>
+      <!-- <canvas id="myChart2" width="200" height="80"></canvas> -->
+      <!--       <canvas id="bar-chart" width="800" height="450"></canvas>
+ -->
+      <div class="button-container"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
